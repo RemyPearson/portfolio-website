@@ -220,3 +220,28 @@ nav { display: none; }
         margin-left: 2em;
     }
 }
+
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
+
+    }
+
+    .section_title-about {
+        grid-area: title;
+    }
+
+    .about-me_img {
+        grid-area: img;
+    }
+}
