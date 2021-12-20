@@ -327,6 +327,9 @@ header {
     }
 }
 
+
+
+/* About me section */ 
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -349,9 +352,20 @@ header {
 
     .about-me_img {
         grid-area: img;
+        padding-left: 10px;
+        padding-top: 25%;
     }
 }
 
+@media (max-width: 600px) {
+    .about-me_img {
+        display: none;
+    }
+}
+
+.slogan {
+    color: var(--clr-dark)
+}
 
 
 /* My work section */
