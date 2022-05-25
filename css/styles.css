@@ -51,6 +51,15 @@ body {
     line-height: 1.6;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+   
+    text-decoration: none;
+}
+
 section {
     padding: 5em 2em;
 }
@@ -144,8 +153,8 @@ header {
 
 .nav { 
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-accent);
+    color: var(--clr-dark);
     top: 0;
     bottom: 0;
     left: 0;
@@ -176,7 +185,7 @@ header {
 }
 
 .nav_link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-light);
 }
 
 .nav-toggle {
@@ -218,7 +227,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -263,6 +272,11 @@ header {
 
     }
     .intro_img {
+        grid-area: img;
+        min-width: 250px;
+    }
+
+    .portfolio_img_individual {
         grid-area: img;
         min-width: 250px;
     }
@@ -385,12 +399,14 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
 }
 
 .portfolio_item {
-    background: var(--clr-accent);
+    /*background: var(--clr-accent);*/
     overflow: hidden;
+    padding-right: .25em;
+    padding-left: .25em;
 }
 
 .portfolio_img {
@@ -467,4 +483,26 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.2em;
+
+}
+
+.gitLinkButton {
+    color: var(--clr-dark);
+    background-color: var(--clr-accent);
+    text-decoration: none;
+    border: 2px solid var(--clr-accent);
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+      
+.gitLinkButton:hover {
+        background-color: var(--clr-dark);
+        color: white;
+}
+
+.portfolio_img_individual {
+    grid-area: img;
+    min-width: 400px;
+    box-shadow: var(--bs);
 }
