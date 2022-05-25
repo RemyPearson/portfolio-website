@@ -58,6 +58,7 @@ a {
 a:visited {
    
     text-decoration: none;
+    color: white;
 }
 
 section {
@@ -488,10 +489,10 @@ header {
 }
 
 .gitLinkButton {
-    color: var(--clr-dark);
-    background-color: var(--clr-accent);
+    color: var(--clr-light);
+    background-color: #6e5494;
     text-decoration: none;
-    border: 2px solid var(--clr-accent);
+    border: 2px solid #6e5494;
     border-radius: 8px;
     transition-duration: 0.4s;
 }
@@ -505,4 +506,18 @@ header {
     grid-area: img;
     min-width: 400px;
     box-shadow: var(--bs);
+}
+
+.staticSiteLinkButton {
+    color: var(--clr-dark);
+    background-color: var(--clr-accent);
+    text-decoration: none;
+    border: 2px solid var(--clr-accent);
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.staticSiteLinkButton:hover {
+    background-color: var(--clr-dark);
+    color: white;
 }
